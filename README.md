@@ -1,4 +1,4 @@
-# Production Failure Capture & Replay Engine
+# Faultline
 
 Capture redacted, measured failures from an instrumented service; group them into incidents; replay approved GET scenarios against an isolated synthetic target; and compare failure reproduction with a clean recovery run. Replays are asynchronous and never target the captured production host.
 
@@ -171,3 +171,6 @@ Never assume the injected interface affects the tested route. The script cleans 
 - Dashboard credentials are organization API keys supplied by an operator and held in browser `sessionStorage`; there is no user/SSO account system or API-key management UI.
 - Hosted deployment, managed PostgreSQL/Redis provisioning, DNS, and custom domain configuration are operator tasks. No deployment or benchmark is implied by this repository.
 - `tc/netem` is optional, Linux-only, and requires host networking privileges when deliberately run locally. It is not included in hosted worker images or hosted replay.
+
+
+~Sanvi ✿
